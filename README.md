@@ -47,3 +47,11 @@ b1.HasDiscriminator().HasValue("PersonAddress");
 ```
 
 as part of the OwnsMany for Person and `HasDiscriminator` doesn't exist in this context.
+
+### Explicitly define a table per concrete type strategy
+
+```
+modelBuilder.Entity<PersonAddress>().UseTpcMappingStrategy
+```
+
+No change in behaviour; it's the same as the original issue described above.
