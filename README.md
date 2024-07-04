@@ -1,5 +1,7 @@
 Demonstrates an issue (either a bug or with my configuration) with a base class that is used only as an owned relationship but an inherited class is not.
 
+Reported issue: https://github.com/dotnet/efcore/issues/34161
+
 ## To reproduce
 
 1. Modify the connection string to match your environment
